@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Self-hosted variable fonts (no external <link> in production) */
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", monospace;
+
+  /* Single locked accent — emerald, high-contrast on zinc-950 */
+  --color-accent: #10b981;
+  --color-accent-bright: #34d399;
+  --color-accent-dim: #047857;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Page theme is locked to dark per the brief */
+body {
+  background-color: #09090b; /* zinc-950 */
+  color: #e4e4e7; /* zinc-200 */
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  color: #fff;
+}
+
+/* Subtle fixed grain / vignette layer, never on a scrolling container */
+.page-grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background: radial-gradient(
+    120% 90% at 50% -10%,
+    color-mix(in srgb, var(--color-accent) 8%, transparent),
+    transparent 55%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
