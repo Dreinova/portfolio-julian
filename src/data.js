@@ -26,6 +26,17 @@ export const stats = [
 
 export const experience = [
   {
+    role: "Líder del Equipo de Desarrollo",
+    company: "Oblicua",
+    period: "2022 - 2026",
+    place: "Bogotá, Colombia",
+    bullets: [
+      "Lideré el equipo de desarrollo, coordinando la construcción y entrega de sitios y productos web para clientes de turismo, cultura y educación.",
+      "Definí estándares de frontend y buenas prácticas que elevaron la calidad y la consistencia de los proyectos del equipo.",
+      "Acompañé el ciclo completo de cada proyecto, desde la implementación hasta el despliegue y el mantenimiento.",
+    ],
+  },
+  {
     role: "Desarrollador Frontend",
     company: "Instituto Distrital de Turismo de Bogotá (IDT)",
     period: "2022 - 2026",
