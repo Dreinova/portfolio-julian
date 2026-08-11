@@ -16,7 +16,7 @@ export default function Stats() {
             </p>
           </Reveal>
 
-          <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:col-span-5">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-10 lg:col-span-5">
             {stats.map((s, i) => (
               <Reveal key={s.label} delay={i * 0.06}>
                 <div className="font-mono text-4xl font-semibold text-white md:text-5xl">

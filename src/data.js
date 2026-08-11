@@ -1,6 +1,10 @@
 // Contenido extraído del CV de Julián David Delgado Acevedo.
-// Las imágenes de los proyectos son placeholders (picsum.photos). Reemplázalas
-// por capturas reales cuando las tengas.
+//
+// IMÁGENES DE PROYECTOS:
+// Cada proyecto apunta a un archivo en /public/projects/<image>.jpg
+// Suelta ahí las capturas con ESE nombre exacto (ver public/projects/README.md).
+// Tamaño recomendado: 1200x750 px (16:10), .jpg, < 300 KB.
+// Mientras falte una imagen, la tarjeta muestra un placeholder automáticamente.
 
 export const profile = {
   name: "Julián David Delgado Acevedo",
@@ -16,9 +20,8 @@ export const profile = {
 
 export const stats = [
   { value: "8+", label: "Años de experiencia" },
-  { value: "3", label: "Países atendidos (CO · US · PE)" },
+  { value: "9", label: "Proyectos en producción" },
   { value: "6+", label: "Contratos sucesivos en el IDT" },
-  { value: "10+", label: "Clientes públicos y privados" },
 ];
 
 export const experience = [
@@ -59,63 +62,102 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Portal e Intranet del IDT",
-    client: "Instituto Distrital de Turismo · Bogotá",
-    year: "2022-2026",
+    title: "Visit Bogotá",
+    domain: "visitbogota.co",
+    url: "https://visitbogota.co/es",
+    category: "Turismo",
     blurb:
-      "Sitio institucional e intranet mantenidos y evolucionados de forma continua, con mejoras de UI y soporte a campañas digitales de ciudad.",
-    tags: ["React", "Web", "Intranet", "Sector público"],
-    seed: "idt-bogota-turismo",
+      "Portal oficial de turismo de Bogotá: guía de experiencias, agenda cultural y contenidos de ciudad para visitantes y locales.",
+    tags: ["React", "Turismo", "Sector público"],
+    image: "visit-bogota",
     featured: true,
   },
   {
-    title: "App educativa bilingüe",
-    client: "Bilingual Child Care Training · NY",
-    year: "2020-2022",
+    title: "Acuarela",
+    domain: "acuarela.app",
+    url: "https://acuarela.app/",
+    category: "Producto",
     blurb:
-      "Aplicación híbrida iOS y Android para formación bilingüe, con foco en accesibilidad del contenido y despliegue en ambas tiendas.",
-    tags: ["React Native", "iOS", "Android"],
-    seed: "bilingual-childcare-app",
+      "Aplicación web con una interfaz cuidada y fluida, enfocada en una experiencia de usuario limpia y moderna.",
+    tags: ["React", "App", "UI"],
+    image: "acuarela",
     featured: true,
   },
   {
-    title: "Hotel Avenida Jiménez",
-    client: "Oreka Consultores",
-    year: "2018-2020",
+    title: "LosPetitFellas",
+    domain: "lospetitfellas.com.co",
+    url: "https://lospetitfellas.com.co/",
+    category: "Música",
     blurb:
-      "Producto web para el sector hotelero, orientado a presencia digital y experiencia de reserva.",
-    tags: ["Frontend", "Web"],
-    seed: "hotel-avenida-jimenez",
-    featured: false,
+      "Sitio del proyecto musical LosPetitFellas: identidad, música, videos y agenda de conciertos en un espacio inmersivo.",
+    tags: ["Web", "Música", "Cultura"],
+    image: "los-petit-fellas",
+    featured: true,
   },
   {
-    title: "Editorial King Kolor",
-    client: "Oreka Consultores",
-    year: "2018-2020",
+    title: "Bilingual Child Care Training",
+    domain: "bilingualchildcaretraining.com",
+    url: "http://bilingualchildcaretraining.com/",
+    category: "Educación",
     blurb:
-      "Interfaz web para una editorial, con catálogo visual y despliegue de contenidos.",
-    tags: ["Frontend", "Web"],
-    seed: "editorial-king-kolor",
-    featured: false,
-  },
-  {
-    title: "Grupo T&S",
-    client: "Oreka Consultores · Perú",
-    year: "2018-2020",
-    blurb:
-      "Aplicación frontend para un cliente internacional, enfocada en soportar decisiones empresariales.",
-    tags: ["Frontend", "Internacional"],
-    seed: "grupo-tys-peru",
+      "Plataforma de formación bilingüe en cuidado infantil, con contenidos educativos accesibles en web y móvil.",
+    tags: ["React Native", "Web", "Educación"],
+    image: "bilingual-child-care",
     featured: false,
   },
   {
     title: "Harker & Lloreda",
-    client: "Oreka Consultores",
-    year: "2018-2020",
+    domain: "harkerlloreda.com",
+    url: "https://harkerlloreda.com/es",
+    category: "Corporativo",
     blurb:
-      "Desarrollo de interfaces web para consultoría, con entregables digitales y de producción audiovisual.",
-    tags: ["Frontend", "Multimedia"],
-    seed: "harker-lloreda",
+      "Sitio corporativo de firma especializada, con comunicación de servicios, marca y presencia digital.",
+    tags: ["Frontend", "Corporativo"],
+    image: "harker-lloreda",
+    featured: false,
+  },
+  {
+    title: "Cinescuela",
+    domain: "cinescuela.org",
+    url: "https://www.cinescuela.org/",
+    category: "Educación",
+    blurb:
+      "Escuela de cine: oferta formativa, contenidos audiovisuales y comunidad en torno a la creación cinematográfica.",
+    tags: ["Web", "Educación", "Cultura"],
+    image: "cinescuela",
+    featured: false,
+  },
+  {
+    title: "Quartier des Lettres",
+    domain: "quartierdeslettres.org",
+    url: "https://quartierdeslettres.org/",
+    category: "Cultura",
+    blurb:
+      "Sitio cultural en torno a la literatura y la escritura, con contenidos editoriales y una estética sobria.",
+    tags: ["Web", "Cultura"],
+    image: "quartier-des-lettres",
+    featured: false,
+  },
+  {
+    title: "Visita Tenjo",
+    domain: "visitatenjo.com",
+    url: "https://visitatenjo.com/",
+    category: "Turismo",
+    blurb:
+      "Portal turístico del municipio de Tenjo: experiencias, rutas y agenda local para promover el destino.",
+    tags: ["Web", "Turismo"],
+    image: "visita-tenjo",
+    featured: false,
+  },
+  {
+    title: "Festival de Música Sacra",
+    domain: "festivalmusicasacra.com",
+    url: "https://festivalmusicasacra.com/",
+    category: "Eventos",
+    blurb:
+      "Sitio del festival de música sacra: programación, artistas y agenda de eventos con una identidad cuidada.",
+    tags: ["Web", "Cultura", "Eventos"],
+    image: "festival-musica-sacra",
     featured: false,
   },
 ];
