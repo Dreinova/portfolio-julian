@@ -20,7 +20,7 @@ function Shot({ image, domain, alt }) {
     <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-900">
       {ok ? (
         <img
-          src={`${BASE}projects/${image}.jpg`}
+          src={`${BASE}projects/${image}.webp`}
           alt={alt}
           loading="lazy"
           onError={() => setOk(false)}

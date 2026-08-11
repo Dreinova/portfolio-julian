@@ -1,9 +1,9 @@
 // Contenido extraído del CV de Julián David Delgado Acevedo.
 //
 // IMÁGENES DE PROYECTOS:
-// Cada proyecto apunta a un archivo en /public/projects/<image>.jpg
-// Suelta ahí las capturas con ESE nombre exacto (ver public/projects/README.md).
-// Tamaño recomendado: 1200x750 px (16:10), .jpg, < 300 KB.
+// Cada proyecto apunta a un archivo en /public/projects/<image>.webp
+// (ver public/projects/README.md para la tabla de nombres exactos).
+// Recomendado: ancho ~1200 px, formato .webp, < 150 KB.
 // Mientras falte una imagen, la tarjeta muestra un placeholder automáticamente.
 
 export const profile = {
@@ -128,13 +128,13 @@ export const projects = [
     featured: false,
   },
   {
-    title: "Quartier des Lettres",
+    title: "Barrio Letras",
     domain: "quartierdeslettres.org",
     url: "https://quartierdeslettres.org/",
     category: "Cultura",
     blurb:
-      "Sitio cultural en torno a la literatura y la escritura, con contenidos editoriales y una estética sobria.",
-    tags: ["Web", "Cultura"],
+      "Buscador del universo de fondos literarios del mundo: encuentra autores y obras en una interfaz editorial, cálida y multilingüe.",
+    tags: ["Web", "Cultura", "Buscador"],
     image: "quartier-des-lettres",
     featured: false,
   },
