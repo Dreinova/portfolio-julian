@@ -31,8 +31,8 @@ export const experience = [
     period: "2022 - 2026",
     place: "Bogotá, Colombia",
     bullets: [
-      "Lideré el equipo de desarrollo, coordinando la construcción y entrega de sitios y productos web para clientes de turismo, cultura y educación.",
-      "Definí estándares de frontend y buenas prácticas que elevaron la calidad y la consistencia de los proyectos del equipo.",
+      "Dirigí y capacité al equipo de desarrollo (hasta 4 personas), coordinando la planeación y la entrega de los proyectos.",
+      "Me encargué de los proyectos de principio a fin, para clientes de turismo, cultura y educación.",
       "Acompañé el ciclo completo de cada proyecto, desde la implementación hasta el despliegue y el mantenimiento.",
     ],
   },
