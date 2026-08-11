@@ -1,9 +1,17 @@
+import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin } from "@phosphor-icons/react";
 import { profile } from "../data";
 
+// Tu foto: deja el archivo en /public/profile.webp
+// Mientras no exista, se muestra un placeholder automáticamente.
+const PROFILE_IMG = `${import.meta.env.BASE_URL}profile.webp`;
+const PROFILE_FALLBACK =
+  "https://picsum.photos/seed/julian-frontend-workspace/900/1100";
+
 export default function Hero() {
   const reduce = useReducedMotion();
+  const [imgSrc, setImgSrc] = useState(PROFILE_IMG);
   const rise = (delay) => ({
     initial: reduce ? false : { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -83,8 +91,9 @@ export default function Hero() {
         >
           <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-white/10">
             <img
-              src="https://picsum.photos/seed/julian-frontend-workspace/900/1100"
-              alt="Espacio de trabajo de desarrollo frontend"
+              src={imgSrc}
+              onError={() => setImgSrc(PROFILE_FALLBACK)}
+              alt={`Foto de ${profile.name}`}
               className="h-full w-full object-cover"
               loading="eager"
             />
