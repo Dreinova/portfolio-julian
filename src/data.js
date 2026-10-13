@@ -201,6 +201,5 @@ export const skillGroups = [
 ];
 
 export const education = [
-  { title: "Tecnólogo en Producción Multimedia", place: "SENA", year: "2017" },
-  { title: "Bachiller Académico", place: "", year: "2012" },
+  { title: "Tecnólogo en Producción Multimedia", place: "SENA", year: "" },
 ];
