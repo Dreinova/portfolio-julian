@@ -13,6 +13,7 @@ export const profile = {
   location: "Bogotá, Colombia",
   phone: "320 371 2824",
   email: "juliandelgadoacevedo@gmail.com",
+  github: "https://github.com/Dreinova",
   years: 8,
   summary:
     "Frontend Developer con más de 8 años construyendo productos web y aplicaciones híbridas de alta calidad. Especializado en React y React Native, transformo diseños en interfaces usables, accesibles y con alto rendimiento. He trabajado con clientes del sector público y privado en Colombia y el exterior, con foco en código limpio, escalable y centrado en la experiencia de usuario.",

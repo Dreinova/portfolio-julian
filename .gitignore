@@ -3,3 +3,6 @@ dist
 *.local
 .DS_Store
 .vite
+
+# HV generada por scripts/generate_cv.py
+HV-Julian-Delgado.pdf
