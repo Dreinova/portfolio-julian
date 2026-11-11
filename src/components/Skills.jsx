@@ -49,7 +49,7 @@ export default function Skills() {
                 <div key={e.title}>
                   <div className="text-white">{e.title}</div>
                   <div className="mt-1 text-sm text-zinc-500">
-                    {e.place ? `${e.place} · ${e.year}` : e.year}
+                    {[e.place, e.year].filter(Boolean).join(" · ")}
                   </div>
                 </div>
               ))}
