@@ -1,10 +1,12 @@
 import Reveal from "./Reveal";
+import Quadrant from "./Quadrant";
 import { experience } from "../data";
 
 export default function Experience() {
   return (
-    <section id="experiencia" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
+    <section id="experiencia" className="tone-red mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
       <Reveal>
+        <Quadrant cell={0} />
         <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
           Experiencia
         </h2>

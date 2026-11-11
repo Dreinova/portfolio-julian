@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import Quadrant from "./Quadrant";
 import {
   EnvelopeSimple,
   Phone,
@@ -18,12 +19,13 @@ export default function Contact() {
         className="pointer-events-none absolute left-1/2 top-0 h-[50vh] w-[80vh] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(16,185,129,0.35), transparent 62%)",
+            "radial-gradient(circle, color-mix(in srgb, var(--color-accent) 35%, transparent), transparent 62%)",
         }}
       />
 
       <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
         <Reveal>
+          <Quadrant cell={3} />
           <h2 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-tight text-white md:text-5xl">
             ¿Construimos algo{" "}
             <span className="text-accent-bright">juntos</span>?

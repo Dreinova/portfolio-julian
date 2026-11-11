@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Reveal from "./Reveal";
+import Quadrant from "./Quadrant";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { projects } from "../data";
 
@@ -36,7 +37,7 @@ function Shot({ image, domain, alt }) {
           className="flex h-full w-full items-center justify-center"
           style={{
             background:
-              "radial-gradient(circle at 30% 20%, rgba(16,185,129,0.22), transparent 60%)",
+              "radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--color-accent) 22%, transparent), transparent 60%)",
           }}
         >
           <span className="font-mono text-sm text-zinc-500">{domain}</span>
@@ -120,9 +121,10 @@ export default function Projects() {
   const rest = projects.filter((p) => !p.featured);
 
   return (
-    <section id="proyectos" className="border-t border-white/10 bg-white/[0.02]">
+    <section id="proyectos" className="tone-yellow border-t border-white/10 bg-white/[0.02]">
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
         <Reveal>
+          <Quadrant cell={1} />
           <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
             Proyectos
           </h2>

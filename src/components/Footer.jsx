@@ -1,18 +1,13 @@
 import { profile } from "../data";
+import Logo from "./Logo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-white/10">
+    <footer>
+      <div aria-hidden className="nova-rule h-0.5" />
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-5 py-10 sm:flex-row sm:items-center sm:px-8">
-        <div>
-          <div className="font-mono text-sm font-semibold text-white">
-            julián<span className="text-accent-bright">.dev</span>
-          </div>
-          <div className="mt-1 text-sm text-zinc-500">
-            {profile.name} · {profile.role}
-          </div>
-        </div>
+        <Logo descriptor={profile.role} className="h-12 w-12" />
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-zinc-500">
           <a href="#proyectos" className="hover:text-white">

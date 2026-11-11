@@ -8,10 +8,39 @@
   --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", monospace;
 
-  /* Single locked accent — emerald, high-contrast on zinc-950 */
-  --color-accent: #10b981;
-  --color-accent-bright: #34d399;
-  --color-accent-dim: #047857;
+  /* NOVA palette from the JD logo */
+  --color-nova-red: #e8153d;
+  --color-nova-yellow: #fdcd12;
+  --color-nova-green: #cdd90f;
+  --color-nova-cyan: #46c2f2;
+
+  /* Default accent is cyan; .tone-* remaps it per section */
+  --color-accent: var(--color-nova-cyan);
+  --color-accent-bright: #7fd6f6;
+}
+
+/* accent-bright is the text-safe shade: nova-red alone is under 4.5:1 on zinc-950 */
+.tone-red {
+  --color-accent: var(--color-nova-red);
+  --color-accent-bright: #ff5a73;
+}
+.tone-yellow {
+  --color-accent: var(--color-nova-yellow);
+  --color-accent-bright: #ffdc4f;
+}
+.tone-green {
+  --color-accent: var(--color-nova-green);
+  --color-accent-bright: #dbe54a;
+}
+
+.nova-rule {
+  background: linear-gradient(
+    90deg,
+    var(--color-nova-red) 25%,
+    var(--color-nova-yellow) 25% 50%,
+    var(--color-nova-green) 50% 75%,
+    var(--color-nova-cyan) 75%
+  );
 }
 
 html {

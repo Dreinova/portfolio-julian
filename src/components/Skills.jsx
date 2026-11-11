@@ -1,13 +1,15 @@
 import Reveal from "./Reveal";
+import Quadrant from "./Quadrant";
 import { skillGroups, education } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
+    <section id="skills" className="tone-green mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
       <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
         {/* Skills */}
         <div className="lg:col-span-8">
           <Reveal>
+            <Quadrant cell={2} />
             <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
               Stack &amp; habilidades
             </h2>

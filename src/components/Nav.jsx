@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { List, X } from "@phosphor-icons/react";
+import Logo from "./Logo";
 
 const links = [
   { href: "#experiencia", label: "Experiencia" },
@@ -28,10 +29,8 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-        <a href="#top" className="group flex items-center gap-2">
-          <span className="font-mono text-sm font-semibold tracking-tight text-white">
-            julián<span className="text-accent-bright">.dev</span>
-          </span>
+        <a href="#top" aria-label="Julián Delgado, inicio">
+          <Logo />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

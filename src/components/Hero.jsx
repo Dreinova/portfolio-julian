@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin } from "@phosphor-icons/react";
 import { profile } from "../data";
+import { Isotype } from "./Logo";
 
 // Tu foto: deja el archivo en /public/profile.webp
 // Mientras no exista, se muestra un placeholder automáticamente.
@@ -29,7 +30,7 @@ export default function Hero() {
         className="pointer-events-none absolute -top-1/4 left-1/2 h-[70vh] w-[70vh] -translate-x-1/2 rounded-full opacity-40 blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(16,185,129,0.35), transparent 62%)",
+            "radial-gradient(circle, color-mix(in srgb, var(--color-accent) 35%, transparent), transparent 62%)",
         }}
       />
 
@@ -82,6 +83,13 @@ export default function Hero() {
           </motion.div>
         </div>
 
+        {/* Right — brand mark */}
+        <motion.div
+          {...rise(0.16)}
+          className="hidden justify-end lg:col-span-5 lg:flex"
+        >
+          <Isotype className="w-full max-w-[400px]" />
+        </motion.div>
       </div>
     </section>
   );
